@@ -61,6 +61,7 @@ a {
 }
 .content__list {
   height: 298px;
+  width: 100%;
   overflow-y: auto;
   position: relative;
   padding-bottom: 2px;
@@ -70,7 +71,8 @@ a {
   min-height: 100%;
 }
 .title {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
+  padding-left: 3px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -94,6 +96,8 @@ a {
   line-height: 90%;
   padding-top: 6px;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .content__accent {
   color: #545050;
@@ -160,7 +164,8 @@ fieldset {
 
 input[type="text"] {
   background-color: transparent;
-  border: none;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   outline: none;
   font-family: inherit;
   font-size: inherit;
@@ -232,6 +237,7 @@ input::placeholder {
   height: 15px;
   background: #fff;
 }
+
 .search-form__label-text {
   padding-right: 9px;
 }
@@ -245,7 +251,9 @@ input::placeholder {
 }
 .search-form__checkbox-list {
   display: flex;
+  margin-bottom: 2px;
 }
+
 .search-form__checkbox-list .search-form__label {
   padding-left: 4px;
 }
